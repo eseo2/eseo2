@@ -6,32 +6,59 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+---
+title: "Assignment 3: Data Visualization"
+author: "Elliana Seo"
+output: html_document
+---
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+```{r echo=FALSE}
+library("knitr")
+source("Analysis.R")
+```
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/eseo2/eseo2/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+# Introduction and Summary Information
 
-### Support or Contact
+The objective of the **Incarceration Trends** dataset is to provide information about mass incarceration in the United States. The analysis of this dataset is aimed toward directing and inspiring social reform, as the public debate on mass incarceration is one of the pressing issues in today's society. I have chosen to place my focus on finding trends in racial and gender disparities in the U.S. justice system, and how those trends have changed over time. In 1998, the highest number of Black individuals were admitted in the U.S. prison system. In 1998, the state that had the most admitted Black individuals in the U.S. prison system was California. In the same state and year, the average number of Black prison admissions across all counties was 1590; in contrast, the average number of White prison admissions across all counties was 1457. The percent change in the average number of incarceration admissions into the U.S. prison system (in both Black and White populations) from 1998 to 2010 was 1.739244 and 1.460454, respectively. Additionally, the ratio of Black prison admissions to White prison admission from 1998 to 2010 also increased, going from 0.769363 to 0.9162284. In all of the results found in the data, there is a pattern; the number of Black individuals who are admitted into the prison system is almost always higher than those of White individuals.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+
+## Trends Over Time
+This chart is comparing the average prison admission rates (across all counties in the U.S.) from 1990-2016. The red line on the graph represents the average rate of Black admitted individuals, the blue represents White admitted individuals, the green represents Latino admitted individuals, and the yellow represents Asian American and Pacific Islander individuals. I chose to include this graph because it emphasizes the massive disparity between the rate of admitted Black individuals compared to other races in the U.S. prison system. It can be understood from this graph that although there is fluctuation in each rate over time, it is clear that the average rate of admitted Black individuals is significantly higher than the rate of the other admitted races from 1998-2016. 
+
+```{r echo = FALSE}
+plot(chart)
+```
+
+### Variable Comparison Chart
+This chart represents the Black Female Prison Admissions vs. White Female Prison Admissions in 2015. The blue points represent the Black female admissions into the U.S. prison system, and the red points represent White female prison admissions. I included this graph, because it shows yet another, and more specific, instance in which the number of admitted Black individuals is higher than those of White individuals. It can be understood that in 2015, there were more incarcerated Black females than there were White females. 
+
+```{r echo=FALSE}
+plot(chart2)
+```
+
+#### Map 
+This map represents the distribution of incarcerated Black individuals in the U.S. prison system on a county level (2016). As there were many "NA" values in the dataset, there is a lot of grey area on the map. I included this map because it gives insight into the areas of the U.S. where there tends to be more incarcerated Black individuals. It can be understood, from this graph, that the population of incarcerated Black individuals in the U.S. prison system tends to be larger in the southern regions of the U.S. 
+
+```{r echo=FALSE}
+plot(chart_3)
+```---
+
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+
