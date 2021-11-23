@@ -31,7 +31,7 @@ plot(chart)
 This chart represents the Black Female Prison Admissions vs. White Female Prison Admissions in 2015. The blue points represent the Black female admissions into the U.S. prison system, and the red points represent White female prison admissions. I included this graph, because it shows yet another, and more specific, instance in which the number of admitted Black individuals is higher than those of White individuals. It can be understood that in 2015, there were more incarcerated Black females than there were White females. 
 
 ```{r echo=FALSE}
-plot(Chart2)
+plot(chart2)
 ```
 
 ## Map 
