@@ -1,0 +1,9 @@
+name: "Assignment3-website"
+output_dir: "."
+navbar:
+  title: "Assignment3 Website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Assignment3"
+      href: about.html
